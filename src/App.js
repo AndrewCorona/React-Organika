@@ -3,7 +3,8 @@ import "./App.css";
 import Footer from "./components/footer/footer";
 import NavBar from "./components/navbar/navBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import QuantityPicker from "./components/quantityPicker/quantityPicker";
+import Product from './components/product/product';
+import Catalog from "./components/catalog/catalog";
 
 
 function App() {
@@ -13,11 +14,9 @@ function App() {
     <NavBar></NavBar>
 
     <div className="container">
-      <h1>Hello There</h1>
-      <br />
-      <br />
-      <QuantityPicker></QuantityPicker>
+      <Catalog></Catalog>
       </div>
+
       <Footer></Footer>
     </div>
   );
