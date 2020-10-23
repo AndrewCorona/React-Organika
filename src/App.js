@@ -3,8 +3,8 @@ import "./App.css";
 import Footer from "./components/footer/footer";
 import NavBar from "./components/navbar/navBar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Product from './components/product/product';
 import Catalog from "./components/catalog/catalog";
+import Todo from "./components/todo/todo";
 
 
 function App() {
@@ -14,7 +14,10 @@ function App() {
     <NavBar></NavBar>
 
     <div className="container">
-      <Catalog></Catalog>
+      {/* <Catalog></Catalog> */}
+
+      <hr></hr>
+      <Todo></Todo>
       </div>
 
       <Footer></Footer>

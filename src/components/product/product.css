@@ -1,17 +1,18 @@
 .product{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap:wrap;
-    height:200px;
-    width:250px;
-    border: 1px solid lightblue;
+    height:350px;
+    width:340px;
     background-color:white;
-    margin-bottom:10px;
-    margin-top:5px;
+    margin-bottom:70px;
+    margin-top:10px;
 }
 
 .addbtn{
-    margin-left:10px;
+    margin-left:5px;
+    width:78px;
+    font-size:12px;
 }
 
 .price{
@@ -23,5 +24,28 @@
 }
 
 .quantitybox{
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+.itemprice{
+    font-weight:bold;
+}
+
+.titleitem{
+    margin-right:3px;
+}
+
+.titleitem a:hover{
+    color:black;
+    text-decoration:none;
+}
+
+.titleitem a{
+    color:black;
+    text-decoration:none;
+}
+
+.productimg{
+    height:300px;
+    width:300px;
 }
