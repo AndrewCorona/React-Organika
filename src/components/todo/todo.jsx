@@ -6,7 +6,20 @@ class Todo extends Component {
     todos: [],
   };
 
-  render() {
+  handleTextChange = (event) => {
+    this.setState({ todoText: event.target.value });
+  };
+
+  consolelogstate = () => {
+    console.log(this.state.todoText);
+  };
+
+  /*textToTodos = () => {
+    this.setState.todos(text);
+  }*/
+
+  render()  {
+    console.log(this.state);
     return (
       <div>
         <h5>Simple todo app</h5>
@@ -18,7 +31,9 @@ class Todo extends Component {
             onChange={this.handleTextChange}
             placeholder="Todo text"
           ></input>
-          <button>Add</button>
+          <button
+          onClick={this.consolelogstate}>
+            Add</button>
         </div>
         <div>
           <ul>
@@ -31,9 +46,7 @@ class Todo extends Component {
     );
   }
 
-  handleTextChange = (event) => {
-    this.setState({ todoText: event.target.value });
-  };
+
 }
 
 export default Todo;
