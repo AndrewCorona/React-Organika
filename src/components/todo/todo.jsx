@@ -10,13 +10,11 @@ class Todo extends Component {
     this.setState({ todoText: event.target.value });
   };
 
-  consolelogstate = () => {
-    console.log(this.state.todoText);
-  };
-
-  /*textToTodos = () => {
-    this.setState.todos(text);
-  }*/
+  addSave = () => {
+    var addbtn = [...this.state.todos]; //clone || hard copy
+    addbtn.push(this.state.todoText);
+    this.setState({todos:addbtn, todoText: ""});
+  }
 
   render()  {
     console.log(this.state);
@@ -32,7 +30,7 @@ class Todo extends Component {
             placeholder="Todo text"
           ></input>
           <button
-          onClick={this.consolelogstate}>
+          onClick={this.addSave}>
             Add</button>
         </div>
         <div>
@@ -50,17 +48,3 @@ class Todo extends Component {
 }
 
 export default Todo;
-
-
-/**
- * homework
- * 
- * read about virtual dom
- * steps:
- * 1 - click on button
- * 2 - console log the text from the state
- * 3 - push that text into the state
- * 4 - clear the input (clear the state.todoText)
- * 5 - map the state.todos to li
- *
- */
