@@ -72,8 +72,8 @@ class Catalog extends Component {
         categories.push(product.category);
       }
     }
-//sort your categories array with something like
-//categories = categories.sort(() => {});
+
+categories = categories.sort();
 
     this.setState({ categories: categories });
   }
